@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="customizer">
+        <button class="customizer-toggle">🎨<span>Customize</span></button>
+        <div class="customizer-panel">
+            <div class="panel-section">
+                <h3>Themes</h3>
+                <div class="theme-buttons">
+                    <button class="theme-btn" data-theme="retro">🎮<span>Retro</span></button>
+                    <button class="theme-btn" data-theme="cyber">🌐<span>Cyber</span></button>
+                    <button class="theme-btn" data-theme="fantasy">🏰<span>Fantasy</span></button>
+                    <button class="theme-btn" data-theme="neon">💫<span>Neon</span></button>
+                </div>
+            </div>
+            <div class="panel-section">
+                <h3>Styles</h3>
+                <div class="style-buttons">
+                    <button class="style-btn" data-style="default">🎯<span>Default</span></button>
+                    <button class="style-btn" data-style="pixelated">📍<span>Pixelated</span></button>
+                    <button class="style-btn" data-style="rounded">💫<span>Rounded</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Retro Game Hub</h1>
+        <div class="game-grid">
+            <div class="game-card" onclick="location.href='games/whack-a-mole-game/index.html'">
+                <div class="game-icon">🔨</div>
+                <h2>Whack-a-Mole</h2>
+                <p>Test your reflexes! Whack those moles before they hide!</p>
+            </div>
+            <div class="game-card" onclick="location.href='games/elemental-equilibrium/index.html'">
+                <div class="game-icon">⚡</div>
+                <h2>Elemental Equilibrium</h2>
+                <p>Master the elements in this exciting adventure!</p>
+            </div>
+            <div class="game-card add-game">
+                <div class="game-icon">➕</div>
+                <h2>More Coming Soon</h2>
+                <p>Stay tuned for new exciting games!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Created with ❤️ | Select a game to play!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

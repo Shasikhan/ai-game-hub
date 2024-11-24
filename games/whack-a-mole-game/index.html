@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Whack-a-Mole!</h1>
+            <div class="game-info">
+                <div class="score-board">
+                    <span>Score: </span>
+                    <span id="score">0</span>
+                </div>
+                <div class="high-score">
+                    <span>High Score: </span>
+                    <span id="highScore">0</span>
+                </div>
+                <div class="timer">
+                    <span>Time: </span>
+                    <span id="time">30</span>s
+                </div>
+            </div>
+            <div class="controls">
+                <button id="startGame">Start Game</button>
+                <button id="stopGame" class="hidden">Stop Game</button>
+                <label class="sound-toggle">
+                    <input type="checkbox" id="soundToggle" checked>
+                    Sound
+                </label>
+            </div>
+        </header>
+        <div class="game-board">
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+            <div class="hole"><div class="mole"><div class="face"></div></div></div>
+        </div>
+    </div>
+    <div class="modal" id="gameOverModal">
+        <div class="modal-content">
+            <h2>Game Over!</h2>
+            <div class="modal-score">
+                <p>Your Score: <span id="finalScore">0</span></p>
+                <p class="high-score-text"></p>
+            </div>
+            <button id="playAgain">Play Again</button>
+        </div>
+    </div>
+    <div class="modal" id="difficultyModal">
+        <div class="modal-content">
+            <h2>Select Difficulty</h2>
+            <div class="difficulty-options">
+                <button class="difficulty-btn" data-difficulty="easy">
+                    Easy
+                    <span class="difficulty-desc">Perfect for beginners</span>
+                </button>
+                <button class="difficulty-btn" data-difficulty="medium">
+                    Medium
+                    <span class="difficulty-desc">For experienced players</span>
+                </button>
+                <button class="difficulty-btn" data-difficulty="hard">
+                    Hard
+                    <span class="difficulty-desc">For true champions</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
